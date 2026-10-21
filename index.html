@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play UNO Together! - Official Online UNO Game | playunotogether.online</title>
+  <meta name="description" content="Play UNO with friends online! Official download for Play UNO Together. Custom rules, 2v2 multiplayer, voice chat, and instant rooms.">
+  <meta name="theme-color" content="#0e1738">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Security Hardening: Strict CSP, Anti-Sniffing & Clickjacking Protection -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Google Fonts: Rubik for bold official game title and Plus Jakarta Sans for clean UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rubik:ital,wght@0,500;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="uno-portal">
+
+  <!-- Top Navigation Bar (Official letsplayuno Style) -->
+  <header class="main-nav">
+    <div class="nav-container">
+      
+      <!-- Brand Logo & Domain -->
+      <a href="#hero" class="nav-brand">
+        <img src="assets/images/logo.jpg" alt="Play UNO Together" class="brand-emblem">
+        <div class="brand-text">
+          <span class="brand-title">UNO!™ TOGETHER</span>
+          <span class="brand-domain">playunotogether.online</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link active">HOME</a>
+        <a href="#cards-section" class="nav-link">CARDS</a>
+        <a href="#features" class="nav-link">FEATURES</a>
+        <a href="#download" class="nav-link nav-btn-play">PLAY NOW</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Exact letsplayuno Grand Center Stage) -->
+  <section class="hero" id="hero">
+    
+    <!-- Background Sunburst & Lights -->
+    <div class="hero-bg-wrapper">
+      <img src="assets/images/letsplayuno-hero.jpg" alt="UNO Together Hero Banner" class="hero-backdrop-img">
+      <div class="hero-vignette"></div>
+    </div>
+
+    <!-- Hero Center Content -->
+    <div class="hero-content" id="download">
+      
+      <!-- Headline Slogan -->
+      <div class="hero-slogan-wrap">
+        <h1 class="hero-title">UNO!™ TOGETHER</h1>
+        <p class="hero-desc">
+          <span>UNO!™ is now available worldwide on PC!</span><br>
+          Join millions of players across the globe or host private rooms for your best friends.
+        </p>
+      </div>
+
+      <!-- THE ICONIC 3D ARCADE DOWNLOAD BUTTON -->
+      <div class="download-action-container">
+        
+        <a id="downloadBtn" href="downloads/PlayUnoTogether_Setup.zip" download="PlayUnoTogether_Setup.zip" class="uno-arcade-btn">
+          <div class="btn-top-shine"></div>
+          <span class="btn-star star-left">★</span>
+          <div class="btn-content">
+            <span class="btn-primary-text">DOWNLOAD NOW</span>
+            <span class="btn-sub-text">DIRECT DOWNLOAD • FREE FOR PC</span>
+          </div>
+          <span class="btn-star star-right">★</span>
+        </a>
+
+        <!-- Specs Badge Under Button -->
+        <div class="platform-meta">
+          <span class="meta-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-13.051-1.802"/></svg> Windows 10 / 11 (64-bit)</span>
+          <span class="meta-dot">•</span>
+          <span class="meta-item">Version v1.4.2</span>
+          <span class="meta-dot">•</span>
+          <span class="meta-item verified">✓ Safe & Verified</span>
+        </div>
+
+        <!-- Automatic Download Success Notice -->
+        <div id="downloadNotice" class="download-notice-box hidden">
+          <div class="notice-badge">✓</div>
+          <div class="notice-texts">
+            <strong>Download Started Automatically!</strong>
+            <p>Your game is downloading. If it doesn't start, <a href="downloads/PlayUnoTogether_Setup.zip" download="PlayUnoTogether_Setup.zip" class="link-retry">click here to retry</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INTERACTIVE 3D FLIPPING UNO CARDS (Iconic letsplayuno Showcase) -->
+  <section class="cards-section" id="cards-section">
+    <div class="section-header">
+      <h2 class="section-title">CHOOSE YOUR MOVE!</h2>
+      <p class="section-subtitle">Click or hover on each UNO card to reveal exclusive features & game modes</p>
+    </div>
+
+    <div class="cards-carousel">
+      
+      <!-- Card 1: Wild Draw 4 -->
+      <div class="flip-card active" data-card="1">
+        <div class="flip-card-inner">
+          <div class="card-face card-front wild-gradient">
+            <div class="card-corner top-left">+4</div>
+            <div class="card-center-symbol wild-icon">
+              <span>WILD</span>
+              <div class="color-wheel">
+                <i class="c-red"></i><i class="c-blue"></i>
+                <i class="c-yellow"></i><i class="c-green"></i>
+              </div>
+            </div>
+            <div class="card-corner bottom-right">+4</div>
+            <span class="flip-indicator">CLICK TO FLIP ↻</span>
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/images/gameplay-preview.jpg" alt="Wild 4 Mode" class="back-preview-img">
+            <div class="card-back-content">
+              <h3>Wild Stacking!</h3>
+              <p>Stack +2 and +4 cards to send penalty chaos to your opponents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Red 7 -->
+      <div class="flip-card" data-card="2">
+        <div class="flip-card-inner">
+          <div class="card-face card-front red-gradient">
+            <div class="card-corner top-left">7</div>
+            <div class="card-center-symbol text-val">7</div>
+            <div class="card-corner bottom-right">7</div>
+            <span class="flip-indicator">CLICK TO FLIP ↻</span>
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/images/custom-cards.jpg" alt="7-0 Rule" class="back-preview-img">
+            <div class="card-back-content">
+              <h3>7-0 Hand Swap</h3>
+              <p>Play a 7 to swap hands with anyone, or play a 0 to rotate all cards!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Blue Reverse -->
+      <div class="flip-card" data-card="3">
+        <div class="flip-card-inner">
+          <div class="card-face card-front blue-gradient">
+            <div class="card-corner top-left">⇄</div>
+            <div class="card-center-symbol arrow-val">⇄</div>
+            <div class="card-corner bottom-right">⇄</div>
+            <span class="flip-indicator">CLICK TO FLIP ↻</span>
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/images/hero-banner.jpg" alt="Reverse Direction" class="back-preview-img">
+            <div class="card-back-content">
+              <h3>Instant 2v2 Teams</h3>
+              <p>Team up with a partner and reverse the flow to assist each other!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Yellow Skip -->
+      <div class="flip-card" data-card="4">
+        <div class="flip-card-inner">
+          <div class="card-face card-front yellow-gradient">
+            <div class="card-corner top-left">⊘</div>
+            <div class="card-center-symbol skip-val">⊘</div>
+            <div class="card-corner bottom-right">⊘</div>
+            <span class="flip-indicator">CLICK TO FLIP ↻</span>
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/images/gameplay-preview.jpg" alt="Skip Turn" class="back-preview-img">
+            <div class="card-back-content">
+              <h3>Jump-In Battles</h3>
+              <p>Have the exact same card? Jump in out of turn before anyone notices!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Green Draw 2 -->
+      <div class="flip-card" data-card="5">
+        <div class="flip-card-inner">
+          <div class="card-face card-front green-gradient">
+            <div class="card-corner top-left">+2</div>
+            <div class="card-center-symbol text-val">+2</div>
+            <div class="card-corner bottom-right">+2</div>
+            <span class="flip-indicator">CLICK TO FLIP ↻</span>
+          </div>
+          <div class="card-face card-back">
+            <img src="assets/images/custom-cards.jpg" alt="Custom Decks" class="back-preview-img">
+            <div class="card-back-content">
+              <h3>Custom Deck Skins</h3>
+              <p>Collect Cyberpunk Neon, Royal Gold, and Retro Arcade card themes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES HIGHLIGHT GRID -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">THE ULTIMATE UNO EXPERIENCE</h2>
+        <p class="section-subtitle">Everything you love about UNO, enhanced with multiplayer action and modern graphics</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon icon-friends">👥</div>
+          <h3>Play With Friends</h3>
+          <p>Create private 2 to 8 player lobbies with room codes. Share your code and start playing in seconds.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-rules">⚡</div>
+          <h3>Custom House Rules</h3>
+          <p>Toggle 7-0 Hand Swap, Stacking (+2 / +4), Jump-In rules, or stick with official tournament standards.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-chat">🎙️</div>
+          <h3>Voice & Emojis</h3>
+          <p>Real-time voice chat, funny soundboards, and expressive animated emojis for unforgettable game nights.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-trophy">🏆</div>
+          <h3>Global Leaderboards</h3>
+          <p>Climb the seasonal competitive ranks, earn exclusive card backs, and prove you're the true UNO champion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM DOWNLOAD CALL-TO-ACTION (letsplayuno Style) -->
+  <section class="bottom-cta">
+    <div class="cta-inner">
+      <h2>Ready to shout UNO!?</h2>
+      <p>Download Play UNO Together now and join the fun on PC!</p>
+      <a href="downloads/PlayUnoTogether_Setup.zip" download="PlayUnoTogether_Setup.zip" class="uno-arcade-btn cta-btn">
+        <div class="btn-top-shine"></div>
+        <span class="btn-star">★</span>
+        <div class="btn-content">
+          <span class="btn-primary-text">FREE DOWNLOAD</span>
+        </div>
+        <span class="btn-star">★</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- OFFICIAL GAME FOOTER (letsplayuno style) -->
+  <footer class="official-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="Logo" class="footer-logo">
+        <div class="footer-brand-info">
+          <strong>Play UNO Together</strong>
+          <span>playunotogether.online</span>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#cards-section">Cards</a>
+        <a href="#features">Features</a>
+        <a href="downloads/PlayUnoTogether_Setup.zip" download="PlayUnoTogether_Setup.zip">Download PC</a>
+        <a href="mailto:support@playunotogether.online">Support</a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 <strong>playunotogether.online</strong>. All rights reserved.</p>
+        <p class="disclaimer">UNO and associated trademarks are properties of Mattel. This is an online multiplayer community client.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

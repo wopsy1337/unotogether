@@ -1,0 +1,22 @@
+# ==============================================================================
+# Security & Anti-Directory Indexing Configuration
+# playunotogether.online
+# ==============================================================================
+
+# Disable Directory Browsing / File Listing
+Options -Indexes
+
+# Prevent access to hidden files and sensitive directories
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Security Headers (Anti-XSS, Anti-Sniffing, Anti-Clickjacking)
+<IfModule mod_headers.c>
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+</IfModule>
